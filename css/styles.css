@@ -67,12 +67,11 @@ a {
 .header-menu-list {
     display: flex;
     gap: 40px;
-}
-
-.header-menu-item {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.header-menu-item {}
 
 .header-menu-link {
     font-weight: 500;
@@ -96,12 +95,11 @@ a {
 .header-contacts-list {
     display: flex;
     gap: 40px;
-}
-
-.header-contacts-item {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.header-contacts-item {}
 
 .header-contacts-link {
     font-size: 16px;
@@ -164,10 +162,13 @@ a {
     padding-bottom: 120px;
 }
 
-.features-hidden {
-    visibility: hidden;
-    pointer-events: none;
+.visually-hidden {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
     position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .features-list {
